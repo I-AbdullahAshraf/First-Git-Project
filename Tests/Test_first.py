@@ -122,6 +122,8 @@ submit_calibration = driver.find_element(By.ID, 'submit-skills')
 submit_calibration.click()
 
 
+
+
 about_us = driver.find_element(By.XPATH, "//a[contains(text(),'Next: About us')]")
 about_us.click()
 
