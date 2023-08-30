@@ -1,10 +1,11 @@
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
 driver = webdriver.Chrome()
 
-driver.get("https://radical.talentadore.com/login")
+driver.get("http://localhost:5000/login")
 
 driver.maximize_window()
 
@@ -103,6 +104,7 @@ add_language.click()
 language.send_keys("German")
 add_language.click()
 time.sleep(5)
+
 musthave1 = driver.find_element(By.ID, 'requirement-HTML',)
 musthave2 = driver.find_element(By.ID, 'requirement-CSS',)
 musthave3 = driver.find_element(By.ID, 'requirement-Java_32_Script',)
